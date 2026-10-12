@@ -27,11 +27,8 @@ test.only('fill registration information', async ({ page }) => {
     await page.locator("//input[@id='newsletter']").check({ force: true });
     await page.locator("//input[@id='toggleOption']/parent::label/child::span").click();
     const starRating = page.locator ("//form[@id='registrationForm']/descendant::div[@id='starRating']");
-    
-    await starRating.evaluate((element) => {
-    
-    element.setAttribute('data-rating', '3.9'); 
-    element.style.setProperty('--rating-width', '78%');
+     await starRating.click({
+    position: { x: 80, y: 10 },
     });
 
     const dateInput = page.locator("//input[@id='customDate']");
