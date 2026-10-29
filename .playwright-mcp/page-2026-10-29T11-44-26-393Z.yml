@@ -1,0 +1,22 @@
+- generic [ref=f8e2]:
+  - status [ref=f8e3]
+  - main [ref=f8e9]:
+    - generic [ref=f8e10]:
+      - heading "Đăng Nhập" [level=1] [ref=f8e11]
+      - generic [ref=f8e12]:
+        - generic [ref=f8e13]: Email
+        - textbox "ten@viva.vn" [ref=f8e14]
+        - generic [ref=f8e15]: Mật Khẩu
+        - generic [ref=f8e16]:
+          - textbox "***************" [ref=f8e17]
+          - button "Hiện mật khẩu" [ref=f8e18] [cursor=pointer]
+        - button "Đăng Nhập" [ref=f8e22] [cursor=pointer]
+        - separator [ref=f8e23]
+        - button "Đăng Nhập Với Facebook" [disabled] [ref=f8e24] [cursor=pointer]
+        - button "Đăng Nhập Với Google" [disabled] [ref=f8e28] [cursor=pointer]
+      - paragraph [ref=f8e32]:
+        - link "Quên Mật Khẩu" [ref=f8e33] [cursor=pointer]:
+          - /url: /quan-tri/forgot-password
+      - paragraph [ref=f8e34]:
+        - link "Tạo Tài Khoản" [ref=f8e35] [cursor=pointer]:
+          - /url: /quan-tri/signup
